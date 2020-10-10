@@ -22,6 +22,14 @@ const userSchema = new mongoose.Schema({
         required: true,
         minlength: 8
     },
+    bio: {
+        type: String,
+        maxlength: 255
+    },
+    interest: {
+        type: String,
+        maxlength: 100
+    },
     createdAt: {
         type: Date,
         default: Date.now

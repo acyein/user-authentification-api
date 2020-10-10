@@ -20,11 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Use routes
-app.use('/api/', usersRoutes);
-app.use('/api/posts', postsRoutes);
-
-app.get('/', (req, res) => {
-	res.send('Welcome!');
-});
+app.use('/', usersRoutes);
+app.use('/posts', postsRoutes);
 
 app.listen(3000, () => console.log('Server is running'));
