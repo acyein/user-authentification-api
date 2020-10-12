@@ -12,11 +12,11 @@ A Node.js authentication API that allows myself to register, login, see my profi
 # Routes
 | Verb | URL                   | Description                     | Header / Body Input                              |
 |------|-----------------------|---------------------------------|--------------------------------------------------|
-| POST | /api/register         | Lets user register              | firstName  <br>lastName  <br>email  <br>password |
-| POST | /api/login            | Lets user login                 | email  <br>password                              |
-| GET  | /api/users/my-profile | Displays my profile             | auth-token                                       |
-| GET  | /api/users/:id        | Displays another user's profile | auth-token                                       |
-| GET  | /api/posts            | Displays a blog post            | -                                                |
+| POST | /register         | Lets user register              | firstName  <br>lastName  <br>email  <br>password |
+| POST | /login            | Lets user login                 | email  <br>password                              |
+| GET  | /users/my-profile | Displays my profile             | auth-token                                       |
+| GET  | /users/:id        | Displays another user's profile | auth-token                                       |
+| GET  | /posts            | Displays a blog post            | -                                                |
 
 # Credits
 Followed Dev Ed's [tutorial](https://youtu.be/2jqok-WgelI), 'Build A Node.js API Authentication With JWT Tutorial'
